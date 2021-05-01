@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <!-- set the character set -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- first step to a responsive site -->
+    <title>Bus Delays Working title</title>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- Your styles should be called here -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+  </head>
+
+  <body>
+    <!-- YOUR CONTENT GOES HERE -->
+
+    <div class="container map">
+      <h2>How long is the average delay for your child?</h2>
+      <p>Select what type of student your child is and when they are travelling to find out the average delay of their trip.</p>
+      <div class="flex filter">
+        <div>
+          <select id="education" class="filter">
+            <option value="">Type of Student</option>
+            <option value="generaled">General Education</option>
+            <option value="specialed">Special Education</option>
+          </select>
+        </div>
+        <div>
+          <select id="time" class="filter">
+            <option value="">Time of Travel</option>
+            <option value="am">Travel to School</option>
+            <option value="pm">Travel from School</option>
+          </select>
+        </div>
+        <div>
+          <select id="delay" class="filter">
+            <option value="">Type of Delay</option>
+            <option value="traffic">Traffic</option>
+            <option value="breakdown">Breakdown</option>
+          </select>
+        </div>
+        <div>
+          <select id="year" class="filter">
+            <option value="">School Year</option>
+            <option value="fifteen">2015-2016</option>
+            <option value="sixteen">2016-2017</option>
+            <option value="seventeen">2017-2018</option>
+            <option value="eighteen">2018-2019</option>
+            <option value="ninetten">2019-2020</option>
+            <option value="twenty">2020-2021</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="container photo">
+      <section class="flex">
+        <div class="item   generaled am traffic fifteen">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2084850772626!2d-73.9695486847168!3d40.713426707218744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b5ffbbe9983%3A0xebde2100944a8e0a!2sDomino%20Park%20Greenmarket!5e0!3m2!1sen!2sus!4v1614701397482!5m2!1sen!2sus"
+            width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <address>
+            <a href="https://www.grownyc.org">Domino Park Greenmarket</a><br>
+            15 River St<br>
+            Brooklyn, NY 11211<br>
+            Season: July-November<br>
+            Hours: Sun, 9am-3pm
+          </address>
+        </div>
+
+        <div class="item   specialed pm breakdown sixteen">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.627406772533!2d-73.87905774940604!3d40.682177847275675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25dc7daf6b5e7%3A0x4676709856415300!2sCypress%20Hills%20Farmstand!5e0!3m2!1sen!2sus!4v1614701543198!5m2!1sen!2sus"
+            width="285" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <address>
+            <a href="https://www.grownyc.org/farmstands">Cypress Hills Farm Stand</a><br>
+            Fulton St. and Logan St.<br>
+            Brooklyn, NY 11208<br>
+            Season: July-November<br>
+            Hours: Fri, 10am-5pm
+          </address>
+        </div>
+
+        <!-- Placehold to have a blank map when options aren't chosen. Or, do we start with a pre-populated map like in the example? -->
+        <div class="item empty">
+          <h2>No markets match your search</h2>
+        </div>
+
+    </div>
+
+    <!-- Your javascript should be called here -->
+    <script src="main.js"></script>
+  </body>
+
+</html>
