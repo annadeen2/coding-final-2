@@ -60,7 +60,7 @@ function filter_map() {
 		selector = `${selector}.${year_class}`;
 	}
 
-	const filtered_items = document.querySelectorAll(selector);
+	const filtered_items = document.querySelectorAll(`.item.${education_class}.${time_class}.${delay_class}.${year_class}`);
 
 	/**
 	 * If the nodelist is empty, this means no items match, so we should show the empty state
