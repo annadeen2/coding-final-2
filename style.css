@@ -239,57 +239,58 @@ You will find this is far easier than the opposite task of using CSS to cram you
      .container.photo {
          max-width: 1200px;
          padding: 0;
+     }
 
-         @media(min-width: 729px) {
+     @media(min-width: 729px) {
 
-             /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
-             #fifteen1:not(.active) {
-                 bottom: 28%;
-                 left: 23.5%;
-             }
-
-             #thirty1:not(.active) {
-                 top: 21%;
-                 left: 38%;
-             }
-
-             #forty1:not(.active) {
-                 top: 45%;
-                 left: 53%;
-             }
-
-             #sixty1:not(.active) {
-                 bottom: 20.5%;
-                 right: 30%;
-             }
-
-             #ninety1:not(.active) {
-                 bottom: 32.2%;
-                 right: 1%;
-             }
-
-             #fifteen2:not(.active) {
-                 bottom: 18%;
-                 left: 24.5%;
-             }
-
-             #thirty2:not(.active) {
-                 bottom: 39%;
-                 left: 39%;
-             }
-
-             #forty2:not(.active) {
-                 top: 43.5%;
-                 left: 53.8%;
-             }
-
-             #sixty2:not(.active) {
-                 bottom: 28.2%;
-                 right: 29.5%;
-             }
-
-             #ninety2:not(.active) {
-                 bottom: 19.5%;
-                 right: 0.5%;
-             }
+         /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+         #fifteen1:not(.active) {
+             bottom: 28%;
+             left: 23.5%;
          }
+
+         #thirty1:not(.active) {
+             top: 21%;
+             left: 38%;
+         }
+
+         #forty1:not(.active) {
+             top: 45%;
+             left: 53%;
+         }
+
+         #sixty1:not(.active) {
+             bottom: 20.5%;
+             right: 30%;
+         }
+
+         #ninety1:not(.active) {
+             bottom: 32.2%;
+             right: 1%;
+         }
+
+         #fifteen2:not(.active) {
+             bottom: 18%;
+             left: 24.5%;
+         }
+
+         #thirty2:not(.active) {
+             bottom: 39%;
+             left: 39%;
+         }
+
+         #forty2:not(.active) {
+             top: 43.5%;
+             left: 53.8%;
+         }
+
+         #sixty2:not(.active) {
+             bottom: 28.2%;
+             right: 29.5%;
+         }
+
+         #ninety2:not(.active) {
+             bottom: 19.5%;
+             right: 0.5%;
+         }
+     }
