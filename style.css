@@ -18,14 +18,23 @@ You will find this is far easier than the opposite task of using CSS to cram you
      font-size: 16px;
  }
 
+ img {
+     /* Sets image width to match parent */
+     width: 100%;
+     display: block;
+     margin: 0 auto;
+ }
+
  .container {
+     width: 100%;
      max-width: 1000px;
      margin: 0 auto;
      padding: 10px;
  }
 
  .container.photo {
-     max-width: 100%
+     max-width: 1200px;
+     padding: 0;
  }
 
  h2 {
@@ -76,6 +85,126 @@ You will find this is far easier than the opposite task of using CSS to cram you
      flex-basis: 50%;
  }
 
+ .annotate {
+     position: relative;
+ }
+
+ .annotate .dot {
+     position: absolute;
+     height: 25px;
+     width: 25px;
+     border-radius: 50%;
+     overflow: hidden;
+     border: 2px solid #fff;
+     color: #fff;
+ }
+
+ .annotate .dot .inner {
+     position: absolute;
+     opacity: 0;
+     color: #FFF;
+     padding: 25px;
+     width: 100%;
+     top: 50%;
+     transform: translateY(-50%);
+ }
+
+ .annotate .dot .close {
+     position: absolute;
+     color: #FFF;
+     top: 10px;
+     right: 10px;
+     font-size: 2em;
+     text-decoration: none;
+     opacity: 0;
+ }
+
+ .annotate .dot.purple {
+     background-color: rgba(74, 2, 242, 0.65);
+ }
+
+ .annotate .dot.blue {
+     background-color: rgba(11, 18, 230, 0.65);
+ }
+
+ .annotate .dot.pink {
+     background-color: rgba(240, 12, 182, 0.65);
+ }
+
+ .annotate .dot.yellow {
+     background-color: rgba(204, 178, 49, 0.65);
+ }
+
+ .annotate .dot.red {
+     background-color: rgba(219, 33, 33, 0.65);
+ }
+
+ #fifteen1:not(.active) {
+     bottom: 23%;
+     left: 21%;
+ }
+
+ #thirty1:not(.active) {
+     top: 18%;
+     left: 36%;
+ }
+
+ #forty1:not(.active) {
+     top: 40%;
+     left: 51%;
+ }
+
+ #sixty1:not(.active) {
+     bottom: 17%;
+     right: 27%;
+ }
+
+ #ninety1:not(.active) {
+     bottom: 28%;
+     right: 0.2%;
+ }
+
+ #fifteen2:not(.active) {
+     bottom: 12%;
+     left: 22%;
+ }
+
+ #thirty2:not(.active) {
+     bottom: 35%;
+     left: 36%;
+ }
+
+ #forty2:not(.active) {
+     top: 40.5%;
+     left: 50.5%;
+ }
+
+ #sixty2:not(.active) {
+     bottom: 24%;
+     right: 27%;
+ }
+
+ #ninety2:not(.active) {
+     bottom: 14%;
+     right: 0.1%;
+ }
+
+ .annotate .dot.active {
+     width: 100%;
+     height: 100%;
+     left: 0;
+     top: 0;
+     border-radius: 0;
+     border: 0;
+     z-index: 2;
+ }
+
+ .annotate .dot.active .inner,
+ .annotate .dot.active .close {
+     opacity: 1;
+     transition: opacity 0.5s ease-in-out;
+ }
+
  /* Tablet/Desktop overrides */
  @media(min-width: 681px) {
 
@@ -100,6 +229,60 @@ You will find this is far easier than the opposite task of using CSS to cram you
      }
  }
 
- @media(min-width: 729px) {
-     /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
- }
+ .container.photo {
+     max-width: 1200px;
+     padding: 0;
+
+     @media(min-width: 729px) {
+         /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+     }
+
+     #fifteen1:not(.active) {
+         bottom: 28%;
+         left: 23.5%;
+     }
+
+     #thirty1:not(.active) {
+         top: 21%;
+         left: 38%;
+     }
+
+     #forty1:not(.active) {
+         top: 45%;
+         left: 53%;
+     }
+
+     #sixty1:not(.active) {
+         bottom: 20.5%;
+         right: 30%;
+     }
+
+     #ninety1:not(.active) {
+         bottom: 32.2%;
+         right: 1%;
+     }
+
+     #fifteen2:not(.active) {
+         bottom: 18%;
+         left: 24.5%;
+     }
+
+     #thirty2:not(.active) {
+         bottom: 39%;
+         left: 39%;
+     }
+
+     #forty2:not(.active) {
+         top: 43.5%;
+         left: 53.8%;
+     }
+
+     #sixty2:not(.active) {
+         bottom: 28.2%;
+         right: 29.5%;
+     }
+
+     #ninety2:not(.active) {
+         bottom: 19.5%;
+         right: 0.5%;
+     }
