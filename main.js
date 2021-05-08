@@ -35,15 +35,6 @@ function filter_map() {
 	const year_class = document.querySelector("#year").value;
 
 	/**
-	 * Remove .active from each active item
-	 */
-	const active_items = document.querySelectorAll(".item.active");
-
-	active_items.forEach(function (item) {
-		item.classList.remove("active");
-	});
-
-	/**
 	 * Show items that match the dropdowns
 	 */
 	let selector = ".item";
@@ -60,18 +51,30 @@ function filter_map() {
 		selector = `${selector}.${year_class}`;
 	}
 
-	const filtered_items = document.querySelectorAll(`.item.${education_class}.${time_class}.${delay_class}.${year_class}`);
+	const filtered_items = document.querySelectorAll(selector);
+
+	console.log(filtered_items);
+	if (filtered_items.length < 2) {
+		const active_items = document.querySelectorAll(".item.active");
+
+		active_items.forEach(function (item) {
+			item.classList.remove("active");
+		});
+	}
 
 	/**
 	 * If the nodelist is empty, this means no items match, so we should show the empty state
 	 */
 	if (filtered_items.length === 0) {
+		console.log("Showing empty!");
 		document.querySelector(".item.empty").classList.add("active");
 	}
 
-	filtered_items.forEach(function (item) {
-		item.classList.add("active");
-	});
+	if (filtered_items.length === 1) {
+		filtered_items.forEach(function (item) {
+			item.classList.add("active");
+		});
+	}
 }
 
 

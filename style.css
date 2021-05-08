@@ -52,6 +52,14 @@ You will find this is far easier than the opposite task of using CSS to cram you
      margin-bottom: 10px;
  }
 
+ .bus-maps .item {
+     display: none;
+ }
+
+ .bus-maps .item.active {
+     display: block;
+ }
+
  .flex {
      display: flex;
      justify-content: space-between;
