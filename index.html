@@ -7,9 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- first step to a responsive site -->
-    <title>Bus Delays Working title</title>
+    <title>School Bus Delays are Leaving Special Education Students Behind</title>
     <!-- FONT AWESOME -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400;1,600&display=swap" />
     <!-- Your styles should be called here -->
     <link rel="stylesheet" href="style.css" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -24,11 +26,13 @@
     <!-- YOUR CONTENT GOES HERE -->
 
     <div class="photo">
-      <img src="images/STOCKPHOTO.jpg" alt="STOCK PHOTO." />
+      <img src="images/schoolbus.jpeg" alt="School bus in NYC" />
+      <p class="container caption">School bus in NYC. (Credit: Pixabay/Maria_Tsolakidou )</p>
     </div>
+
     <div class="container">
 
-      <h1>TITLE</h1>
+      <h1>School Bus Delays are Leaving Special Education Students Behind</h1>
       <p class="byline">By Angel Adegbesan, Anna Deen, Milette Millington, Zachary Smith</p>
     </div>
     <div class="container">
@@ -36,360 +40,381 @@
         quality education. While this lawsuit is focused on Staten Island, does this supposed disparity exist in the other New York City boroughs?
       </p>
       <p>Whenever a school bus is delayed on a route, the bus driver must fill out a form on a Department of Education (DOE) custom application reporting the delay. These reports are then <a
-          href="https://data.cityofnewyork.us/Transportation/Bus-Breakdown-and-Delays/ez4e-fazm"> released daily </a> by the DOE Office of Public Transportation.
+          href="https://data.cityofnewyork.us/Transportation/Bus-Breakdown-and-Delays/ez4e-fazm"> released daily</a> by the DOE Office of Public Transportation.
         Delays are based on bus routes, arrival and departure times, and whether the delay is due to traffic or a mechanical issue.</p>
       <p>Since the data became public in 2015, each school year has experienced more delays than the year before it, up until the pandemic halted school bus travel in early 2020.
         In many cases, special education student bus routes experienced more delays that lasted longer than the general education student bus routes.
       </p>
-      <p>So, how does this affect your child’s commute to and from school? Below is a map of New York City. Fill out the four options describing your child’s commute— Type of Student, Time of Travel, Type of Delay, and the School Year. You will then
+      <p>So, how does this affect your child’s commute to and from school? Below is a map of New York City. Fill out the four options describing your child’s commute: Type of Student, Time of Travel, Type of Delay, and the School Year. You will then
         see a map showing the average rate of delays for the school year.</p>
     </div>
 
     <div class="container map">
-      <h2>How long is the average delay for your child?</h2>
+      <h2>How common are delays from breakdowns and traffic in NYC?</h2>
       <p>Select what type of student your child is and when they are travelling to find out the average delay of their trip.</p>
-      <div class="flex filter">
-        <div>
-          <select id="education" class="filter">
-            <option value="">Type of Student</option>
-            <option value="generaled">General Education</option>
-            <option value="specialed">Special Education</option>
-          </select>
+      <div class="container">
+        <div class="flex filter">
+          <div>
+            <select id="education" class="filter">
+              <option value="">Type of Student</option>
+              <option value="generaled">General Education</option>
+              <option value="specialed">Special Education</option>
+            </select>
+          </div>
+          <div>
+            <select id="time" class="filter">
+              <option value="">Time of Travel</option>
+              <option value="am">Travel to School</option>
+              <option value="pm">Travel from School</option>
+            </select>
+          </div>
+          <div>
+            <select id="delay" class="filter">
+              <option value="">Type of Delay</option>
+              <option value="traffic">Traffic</option>
+              <option value="breakdown">Breakdown</option>
+            </select>
+          </div>
+          <div>
+            <!--Fun fact! A number does not work as a value -->
+            <select id="year" class="filter">
+              <option value="">School Year</option>
+              <option value="fifteen">2015-2016</option>
+              <option value="sixteen">2016-2017</option>
+              <option value="seventeen">2017-2018</option>
+              <option value="eighteen">2018-2019</option>
+              <option value="nineteen">2019-2020</option>
+            </select>
+          </div>
         </div>
-        <div>
-          <select id="time" class="filter">
-            <option value="">Time of Travel</option>
-            <option value="am">Travel to School</option>
-            <option value="pm">Travel from School</option>
-          </select>
+        <div class="photo key">
+          <img src="images/mapkey03.png" alt="Map Key" />
         </div>
-        <div>
-          <select id="delay" class="filter">
-            <option value="">Type of Delay</option>
-            <option value="traffic">Traffic</option>
-            <option value="breakdown">Breakdown</option>
-          </select>
+      </div>
+
+      <div class="container photo">
+        <section class="bus-maps">
+          <div class="item   generaled am traffic fifteen">
+            <img src="images/2015_gened_am_runninglate.png" />
+          </div>
+
+          <div class="item   generaled am breakdown fifteen">
+            <img src="images/2015_gened_am_breakdown.png" />
+          </div>
+
+          <div class="item   generaled am traffic sixteen">
+            <img src="images/2016_gened_am_runninglate.png" />
+          </div>
+
+          <div class="item   generaled am breakdown sixteen">
+            <img src="images/2016_gened_am_breakdown.png" />
+          </div>
+
+          <div class="item   generaled pm traffic fifteen">
+            <img src="images/2015_gened_pm_runninglate.png" />
+          </div>
+
+          <div class="item   generaled pm breakdown fifteen">
+            <img src="images/2015_gened_pm_breakdown.png" />
+          </div>
+
+          <div class="item   generaled pm traffic sixteen">
+            <img src="images/2016_gened_pm_runninglate.png" />
+          </div>
+
+          <div class="item   generaled pm breakdown sixteen">
+            <img src="images/2016_gened_pm_breakdown.png" />
+          </div>
+
+          <div class="item   specialed am traffic fifteen">
+            <img src="images/2015_specialed_am_runninglate.png" />
+          </div>
+
+          <div class="item   specialed am breakdown fifteen">
+            <img src="images/2015_specialed_am_breakdown.png" />
+          </div>
+
+          <div class="item   specialed am traffic sixteen">
+            <img src="images/2016_specialed_am_runninglate.png" />
+          </div>
+
+          <div class="item   specialed am breakdown sixteen">
+            <img src="images/2016_specialed_am_breakdown.png" />
+          </div>
+
+          <div class="item   specialed pm traffic fifteen">
+            <img src="images/2015_specialed_pm_runninglate.png" />
+          </div>
+
+          <div class="item   specialed pm breakdown fifteen">
+            <img src="images/2016_specialed_pm_breakdown.png" />
+          </div>
+
+          <div class="item   specialed pm traffic sixteen">
+            <img src="images/2016_specialed_pm_runninglate.png" />
+          </div>
+
+          <div class="item   specialed pm breakdown sixteen">
+            <img src="images/2016_specialed_pm_breakdown.png" />
+          </div>
+          <!--2017 Start -->
+          <div class="item   generaled am breakdown seventeen">
+            <img src="images/2017_G_AM_Breakdown.png" />
+          </div>
+
+          <div class="item   generaled am traffic seventeen">
+            <img src="images/2017_G_AM_RunningLate.png" />
+          </div>
+
+          <div class="item   specialed am breakdown seventeen">
+            <img src="images/2017_S_AM_Breakdown.png" />
+          </div>
+
+          <div class="item   specialed am traffic seventeen">
+            <img src="images/2017_S_AM_RunningLate.png" />
+          </div>
+
+          <div class="item   generaled pm breakdown seventeen">
+            <img src="images/2017_G_PM_Breakdown.png" />
+          </div>
+
+          <div class="item   generaled pm traffic seventeen">
+            <img src="images/2017_G_PM_RunningLate.png" />
+          </div>
+
+          <div class="item   specialed pm breakdown seventeen">
+            <img src="images/2017_Special_PM_Breakdown.png" />
+          </div>
+
+          <div class="item   specialed pm traffic seventeen">
+            <img src="images/2017_S_PM_RununingLate.png" />
+          </div>
+
+          <!--2018-->
+          <div class="item   generaled am breakdown eighteen">
+            <img src="images/2018_G_AM_Breakdown.png" />
+          </div>
+
+          <div class="item   generaled am traffic eighteen">
+            <img src="images/2018_G_AM_RunningLate.png" />
+          </div>
+
+          <div class="item   specialed am breakdown eighteen">
+            <img src="images/2018_S_AM_Breakdwn.png" />
+          </div>
+
+          <div class="item   specialed am traffic eighteen">
+            <img src="images/2018_S_AM_RunningLate.png" />
+          </div>
+
+          <div class="item   generaled pm breakdown eighteen">
+            <img src="images/2018_G_PM_Breakdown.png" />
+          </div>
+
+          <div class="item   generaled pm traffic eighteen">
+            <img src="images/2018_G_PM_RunningLate.png" />
+          </div>
+
+          <div class="item   specialed pm breakdown eighteen">
+            <img src="images/2018_S_PM_Breakdown.png" />
+          </div>
+
+          <div class="item   specialed pm traffic eighteen">
+            <img src="images/2018_S_PM_RunningLate.png" />
+          </div>
+
+          <!--2019-->
+          <div class="item   generaled am breakdown nineteen">
+            <img src="images/2019_G_AM_Breakdwn.png" />
+          </div>
+
+          <div class="item   generaled am traffic nineteen">
+            <img src="images/2019_G_AM_RunningLate.png" />
+          </div>
+
+          <div class="item   specialed am breakdown nineteen">
+            <img src="images/2019_S_AM_Breakdown.png" />
+          </div>
+
+          <div class="item   specialed am traffic nineteen">
+            <img src="images/2019_S_AM_RunningLate.png" />
+          </div>
+
+          <div class="item   generaled pm breakdown nineteen">
+            <img src="images/2019_G_PM_Breakdown.png" />
+          </div>
+
+          <div class="item   generaled pm traffic nineteen">
+            <img src="images/2019_G_PM_RunningLate.png" />
+          </div>
+
+          <div class="item   specialed pm breakdown nineteen">
+            <img src="images/2019_S_PM_Breakdown.png" />
+          </div>
+
+          <div class="item   specialed pm traffic nineteen">
+            <img src="images/2019_S_PM_RunningLate.png" />
+          </div>
+          <!--Default image/need to make hide/Ask TC-->
+          <div class="item active empty">
+            <img src="images/basemap02.png" />
+          </div>
+
+        </section>
+      </div>
+
+      <div class="container">
+        <p class="note">
+          NOTES
+        <ol class="note">
+          <li>Data for Staten Island General Education Breakdowns is lower than expected for the borough. The OPT has not responded to confirm the reasoning.</li>
+          <li>The counts for the end of the 2019–2020 school year may be affected after March, when schools in the NYC DOE closed.</li>
+        </ol>
+        </p>
+      </div>
+
+      <div class="container">
+        <p>2018 was the worst year on record for all students, with the widest disparity between special education and general education on record. Special education students were late to school over 400% more often than general education students
+          due
+          to traffic compared to their general education cohort. </p>
+      </div>
+
+
+      <div class="container">
+        <h2>How long is the average delay for your child?</h2>
+        <p>The amount of time a student was late also varied. Below are two charts showing delay times for students in the morning and the afternoon for the 2018-2019 school year. They are broken up into 15-minute intervals. Select the dots on the
+          chart to see the number of late students for each time period. </p>
+      </div>
+
+
+
+      <!--ANGEL ANNOTATED IMAGE HERE!!!!!-->
+      <div class="container photo">
+        <div class="annotate">
+          <img src="images/amedit03-02.png" />
+          <div id="fifteen1" class="dot orange">
+            <a class="close fa fa-times" href="#"></a>
+            <div class="inner">
+              <h3>15 Minutes</h3>
+              <p> By this time, about 9,966 special education students had missed the first 15 minutes of school compared to 7,163 general education students </p>
+            </div>
+          </div>
+
+
+          <div id="thirty1" class="dot orange">
+            <a class="close fa fa-times" href="#"></a>
+            <div class="inner">
+              <h3>30 Minutes</h3>
+              <p>By now, 42,030 special education students had missed the first 30 minutes of school compared to 12,696 general education students </p>
+            </div>
+          </div>
+
+          <div id="forty1" class="dot orange">
+            <a class="close fa fa-times" href="#"></a>
+            <div class="inner">
+              <h3>45 Minutes</h3>
+              <p> At the 45 minutes mark, about 25,734 special education students were late compared to 2,086 general education students </p>
+            </div>
+          </div>
+
+          <div id="sixty1" class="dot orange">
+            <a class="close fa fa-times" href="#"></a>
+            <div class="inner">
+              <h3>60 Minutes</h3>
+              <p>About 5,382 special education students were an hour late compared to 576 general education students. </p>
+            </div>
+          </div>
+
+
+          <div id="ninety1" class="dot orange">
+            <a class="close fa fa-times" href="#"></a>
+            <div class="inner">
+              <h3>90 Minutes</h3>
+              <p> 13,492 special educations were an hour and a half late in comparison to only 122 general education students. </p>
+            </div>
+          </div>
         </div>
-        <div>
-          <!--Fun fact! A number does not work as a value -->
-          <select id="year" class="filter">
-            <option value="">School Year</option>
-            <option value="fifteen">2015-2016</option>
-            <option value="sixteen">2016-2017</option>
-            <option value="seventeen">2017-2018</option>
-            <option value="eighteen">2018-2019</option>
-            <option value="nineteen">2019-2020</option>
-          </select>
+      </div>
+
+      <div class="container">
+        <p> If a student is more than 45 minutes late to school in the morning, there is a chance that they will miss a whole class period. Ninety minutes late will cause a student to miss two classes. When special education students are consistently
+          more affected by delays, this widens the quality of education they receive, reinforcing the point of the District 75 lawsuit.</p>
+      </div>
+
+      <div class="container photo">
+        <div class="annotate">
+          <img src="images/pmedit-01.png" />
+          <div id="fifteen2" class="dot green">
+            <a class="close fa fa-times" href="#"></a>
+            <div class="inner">
+              <h3> 15 Minutes</h3>
+              <p> At this time, 172 general education students were home late compared to 352 students. </p>
+            </div>
+          </div>
+
+
+          <div id="thirty2" class="dot green">
+            <a class="close fa fa-times" href="#"></a>
+            <div class="inner">
+              <h3>30 Minutes</h3>
+              <p>Right now, about 949 general education students were home late compared to 1,694 special education students. </p>
+            </div>
+          </div>
+
+          <div id="forty2" class="dot green">
+            <a class="close fa fa-times" href="#"></a>
+            <div class="inner">
+              <h3>45 Minutes</h3>
+              <p> About 1,436 general education students were home late compared to 2,231 special education students. </p>
+            </div>
+          </div>
+
+          <div id="sixty2" class="dot green">
+            <a class="close fa fa-times" href="#"></a>
+            <div class="inner">
+              <h3>60 Minutes</h3>
+              <p> About an hour after they departed, 553 general education students were home late compared to 973 special education students </p>
+            </div>
+          </div>
+
+
+
+          <div id="ninety2" class="dot green">
+            <a class="close fa fa-times" href="#"></a>
+            <div class="inner">
+              <h3>90 Minutes</h3>
+              <p>At an hour and half after departure, 234 general education students were home late comapred to 536 special education students. </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="container photo">
-      <section class="bus-maps">
-        <div class="item   generaled am traffic fifteen">
-          <img src="images/2015_gened_am_runninglate.png" />
-        </div>
-
-        <div class="item   generaled am breakdown fifteen">
-          <img src="images/2015_gened_am_breakdown.png" />
-        </div>
-
-        <div class="item   generaled am traffic sixteen">
-          <img src="images/2016_gened_am_runninglate.png" />
-        </div>
-
-        <div class="item   generaled am breakdown sixteen">
-          <img src="images/2016_gened_am_breakdown.png" />
-        </div>
-
-        <div class="item   generaled pm traffic fifteen">
-          <img src="images/2015_gened_pm_runninglate.png" />
-        </div>
-
-        <div class="item   generaled pm breakdown fifteen">
-          <img src="images/2015_gened_pm_breakdown.png" />
-        </div>
-
-        <div class="item   generaled pm traffic sixteen">
-          <img src="images/2016_gened_pm_runninglate.png" />
-        </div>
-
-        <div class="item   generaled pm breakdown sixteen">
-          <img src="images/2016_gened_pm_breakdown.png" />
-        </div>
-
-        <div class="item   specialed am traffic fifteen">
-          <img src="images/2015_specialed_am_runninglate.png" />
-        </div>
-
-        <div class="item   specialed am breakdown fifteen">
-          <img src="images/2015_specialed_am_breakdown.png" />
-        </div>
-
-        <div class="item   specialed am traffic sixteen">
-          <img src="images/2016_specialed_am_runninglate.png" />
-        </div>
-
-        <div class="item   specialed am breakdown sixteen">
-          <img src="images/2016_specialed_am_breakdown.png" />
-        </div>
-
-        <div class="item   specialed pm traffic fifteen">
-          <img src="images/2015_specialed_pm_runninglate.png" />
-        </div>
-
-        <div class="item   specialed pm breakdown fifteen">
-          <img src="images/2016_specialed_pm_breakdown.png" />
-        </div>
-
-        <div class="item   specialed pm traffic sixteen">
-          <img src="images/2016_specialed_pm_runninglate.png" />
-        </div>
-
-        <div class="item   specialed pm breakdown sixteen">
-          <img src="images/2016_specialed_pm_breakdown.png" />
-        </div>
-        <!--2017 Start -->
-        <div class="item   generaled am breakdown seventeen">
-          <img src="images/2017_G_AM_Breakdown.png" />
-        </div>
-
-        <div class="item   generaled am traffic seventeen">
-          <img src="images/2017_G_AM_RunningLate.png" />
-        </div>
-
-        <div class="item   specialed am breakdown seventeen">
-          <img src="images/2017_S_AM_Breakdown.png" />
-        </div>
-
-        <div class="item   specialed am traffic seventeen">
-          <img src="images/2017_S_AM_RunningLate.png" />
-        </div>
-
-        <div class="item   generaled pm breakdown seventeen">
-          <img src="images/2017_G_PM_Breakdown.png" />
-        </div>
-
-        <div class="item   generaled pm traffic seventeen">
-          <img src="images/2017_G_PM_RunningLate.png" />
-        </div>
-
-        <div class="item   specialed pm breakdown seventeen">
-          <img src="images/2017_Special_PM_Breakdown.png" />
-        </div>
-
-        <div class="item   specialed pm traffic seventeen">
-          <img src="images/2017_S_PM_RununingLate.png" />
-        </div>
-
-        <!--2018-->
-        <div class="item   generaled am breakdown eighteen">
-          <img src="images/2018_G_AM_Breakdown.png" />
-        </div>
-
-        <div class="item   generaled am traffic eighteen">
-          <img src="images/2018_G_AM_RunningLate.png" />
-        </div>
-
-        <div class="item   specialed am breakdown eighteen">
-          <img src="images/2018_S_AM_Breakdwn.png" />
-        </div>
-
-        <div class="item   specialed am traffic eighteen">
-          <img src="images/2018_S_AM_RunningLate.png" />
-        </div>
-
-        <div class="item   generaled pm breakdown eighteen">
-          <img src="images/2018_G_PM_Breakdown.png" />
-        </div>
-
-        <div class="item   generaled pm traffic eighteen">
-          <img src="images/2018_G_PM_RunningLate.png" />
-        </div>
-
-        <div class="item   specialed pm breakdown eighteen">
-          <img src="images/2018_S_PM_Breakdown.png" />
-        </div>
-
-        <div class="item   specialed pm traffic eighteen">
-          <img src="images/2018_S_PM_RunningLate.png" />
-        </div>
-
-        <!--2019-->
-        <div class="item   generaled am breakdown nineteen">
-          <img src="images/2019_G_AM_Breakdwn.png" />
-        </div>
-
-        <div class="item   generaled am traffic nineteen">
-          <img src="images/2019_G_AM_RunningLate.png" />
-        </div>
-
-        <div class="item   specialed am breakdown nineteen">
-          <img src="images/2019_S_AM_Breakdown.png" />
-        </div>
-
-        <div class="item   specialed am traffic nineteen">
-          <img src="images/2019_S_AM_RunningLate.png" />
-        </div>
-
-        <div class="item   generaled pm breakdown nineteen">
-          <img src="images/2019_G_PM_Breakdown.png" />
-        </div>
-
-        <div class="item   generaled pm traffic nineteen">
-          <img src="images/2019_G_PM_RunningLate.png" />
-        </div>
-
-        <div class="item   specialed pm breakdown nineteen">
-          <img src="images/2019_S_PM_Breakdown.png" />
-        </div>
-
-        <div class="item   specialed pm traffic nineteen">
-          <img src="images/2019_S_PM_RunningLate.png" />
-        </div>
-        <!--Default image/need to make hide/Ask TC-->
-        <div class="item active empty">
-          <img src="images/basemap02.png" />
-        </div>
-
-      </section>
-    </div>
 
     <div class="container">
-      <p>[NOTE] 1. Data for Staten Island General Education Breakdowns is lower than expected for the borough. The OPT has not responded to confirm the reasoning.</p>
-    </div>
-
-    <div class="container">
-      <p>2018 was the worst year on record for all students, with the widest disparity between special education and general education on record. Special education students were late to school over 400% more often than general education students due
-        to traffic compared to their general education cohort. </p>
-      <p>The amount of time a student was late also varied. Below are two charts showing delay times for students in the morning and the afternoon for the 2018-2019 school year. They are broken up into 15-minute intervals. Select the dots on the
-        chart to see the number of late students for each time period. </p>
-    </div>
-
-    <!--ANGEL ANNOTATED IMAGE HERE!!!!!-->
-    <div class="container photo">
-      <div class="annotate">
-        <img src="images/am_run.jpeg" />
-        <div id="fifteen1" class="dot yellow">
-          <a class="close fa fa-times" href="#"></a>
-          <div class="inner">
-            <h3>First Period</h3>
-            <p> By this time, about 9,966 special education students had missed the first period compared to 7,163 general education students </p>
-          </div>
-        </div>
-
-
-        <div id="thirty1" class="dot red">
-          <a class="close fa fa-times" href="#"></a>
-          <div class="inner">
-            <h3>Second Period</h3>
-            <p>By now, 42,030 special education students had missed second period compared to 12,696 general education students </p>
-          </div>
-        </div>
-
-        <div id="forty1" class="dot pink">
-          <a class="close fa fa-times" href="#"></a>
-          <div class="inner">
-            <h3>Third Period</h3>
-            <p> At the 45 minutes mark, about 25,734 special education students were late comapred to 2,086 general education students </p>
-          </div>
-        </div>
-
-        <div id="sixty1" class="dot purple">
-          <a class="close fa fa-times" href="#"></a>
-          <div class="inner">
-            <h3>Fifth Period</h3>
-            <p>By now,about 5,382 special education students were an hour late compared to 576 general education students. </p>
-          </div>
-        </div>
-
-
-        <div id="ninety1" class="dot blue">
-          <a class="close fa fa-times" href="#"></a>
-          <div class="inner">
-            <h3>Lunch Time</h3>
-            <p> An hour and a half later, 13,492 special educations had missed lunch time and only 122 general education students have missed lunch time. </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-
-
-
-
-    <div class="container photo">
-      <div class="annotate">
-        <img src="images/pm_run1.jpeg" />
-        <div id="fifteen2" class="dot yellow">
-          <a class="close fa fa-times" href="#"></a>
-          <div class="inner">
-            <h3> 15 Minutes</h3>
-            <p> At this time, 172 general education students were home late compared to 352 students. </p>
-          </div>
-        </div>
-
-
-        <div id="thirty2" class="dot red">
-          <a class="close fa fa-times" href="#"></a>
-          <div class="inner">
-            <h3>30 Minutes</h3>
-            <p>Right now, about 949 general education students were home late compared to 1,694 special education students. </p>
-          </div>
-        </div>
-
-        <div id="forty2" class="dot pink">
-          <a class="close fa fa-times" href="#"></a>
-          <div class="inner">
-            <h3>45 Minutes</h3>
-            <p> About 1,436 general education students were home late compared to 2,231 special education students. </p>
-          </div>
-        </div>
-
-        <div id="sixty2" class="dot purple">
-          <a class="close fa fa-times" href="#"></a>
-          <div class="inner">
-            <h3>60 Minutes</h3>
-            <p> About an hour after they departed, 553 general education students were home late compared to 973 special education students </p>
-          </div>
-        </div>
-
-
-
-        <div id="ninety2" class="dot blue">
-          <a class="close fa fa-times" href="#"></a>
-          <div class="inner">
-            <h3>90 Minutes</h3>
-            <p>At an hour and half after departure, 234 general education students were home late comapred to 536 special education students. </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-
-
-    <div class="container">
-      <p> If a student is more than 45 minutes late to school in the morning, there is a chance that they will miss a whole class period. Ninety minutes late will cause a student to miss two classes. When special education students are consistently
-        more affected by delays, this widens the quality of education they receive, reinforcing the point of the District 75 lawsuit.</p>
       <p>If you’re a parent of a student who’s been affected by school bus delays, there are several resources available to monitor their school day.</p>
       <p>You can check <a href="https://www.opt-osfns.org/opt/vendors/busbreakdowns/public/default.aspx?search=YES"> this website </a> for daily, real-time updates on school bus delays. If you believe you’ve been affected, you can contact the
         transportation liaison for your school district through the <a href="https://infohub.nyced.org/in-our-schools/operations/transportation-resources-for-schools">NYC DOE’s InfoHub website</a>. You can also read a general overview of school
         transit <a href="https://www.schools.nyc.gov/school-life/transportation/transportation-overview">here</a>.</p>
     </div>
 
-    <div class="container">
-      <h5> Methodology </h5>
-      <p>Here’s how we did it if you want to try it out for yourself:</p>
-      <p>This data was broken out by run type, which designated when a bus was operating during the day. To focus on students going to and from school, we focused on the AM and PM runs for general education and special education students. General
-        education runs are a bus stop-to-school service in the morning and afternoon, and special education students have pick-up and drop-off at their doorstep.</p>
-      <p>To identify the amount of time delayed, we analyzed the time codes. We found multiple discrepancies/irregularities in the reporting for the “how_long_delayed” column. Some records were noted in minutes, some in hours, some in combinations,
-        and others without. The OPT confirmed that the field was changed from manual entry to a pre-populated option during the 2017-2018 school year.</p>
-      <p>Any record that was not an obvious time or time range, like numbers over 400 minutes, was considered to be irregular, given that no number of students would be allowed to be stuck on a school bus for over 7 hours. The remaining records were
-        broken into the following intervals- 1-15 minutes, 16-30 minutes, 31-45 minutes, 46-60 minutes, 61-90 minutes, and 90+ minutes. </p>
-      <p>For time records that were already in intervals that didn’t match ours, we averaged the range. For example, if a time delay were recorded as “25-40 minutes”, the average would be 32.5 minutes. Then, that number would go in the “31-45
-        minutes” interval. </p>
-      <p>When calculating the number of students on a bus, we omitted irregularities like student counts over four digits, like a data entry equal to 5347. We defined 80 students as the maximum number of students allowed on a large bus at one time.
-        Any number above 80 was considered an irregularity. Considering that we were interested in analyzing the number of students delayed, we filtered out any entry with zero students on a bus. </p>
+    <div class="background">
+
+      <div class="container">
+        <h2> Methodology </h2>
+        <p>Here’s how we did it if you want to try it out for yourself:</p>
+        <p>This data was broken out by run type, which designated when a bus was operating during the day. To focus on students going to and from school, we focused on the AM and PM runs for general education and special education students. General
+          education runs are a bus stop-to-school service in the morning and afternoon, and special education students have pick-up and drop-off at their doorstep.</p>
+        <p>To identify the amount of time delayed, we analyzed the time codes. We found multiple discrepancies/irregularities in the reporting for the “how_long_delayed” column. Some records were noted in minutes, some in hours, some in combinations,
+          and others without. The OPT confirmed that the field was changed from manual entry to a pre-populated option during the 2017-2018 school year.</p>
+        <p>Any record that was not an obvious time or time range, like numbers over 400 minutes, was considered to be irregular, given that no number of students would be allowed to be stuck on a school bus for over 7 hours. The remaining records
+          were
+          broken into the following intervals- 1-15 minutes, 16-30 minutes, 31-45 minutes, 46-60 minutes, 61-90 minutes, and 90+ minutes. </p>
+        <p>For time records that were already in intervals that didn’t match ours, we averaged the range. For example, if a time delay were recorded as “25-40 minutes”, the average would be 32.5 minutes. Then, that number would go in the “31-45
+          minutes” interval. </p>
+        <p>When calculating the number of students on a bus, we omitted irregularities like student counts over four digits, like a data entry equal to 5347. We defined 80 students as the maximum number of students allowed on a large bus at one time.
+          Any number above 80 was considered an irregularity. Considering that we were interested in analyzing the number of students delayed, we filtered out any entry with zero students on a bus. </p>
+      </div>
     </div>
 
     </div>

@@ -16,6 +16,8 @@ You will find this is far easier than the opposite task of using CSS to cram you
  html, body {
      /* Sets default font-size to 16px, ensuring 1em = 16px; */
      font-size: 16px;
+     font-family: 'Open Sans', sans-serif;
+     font-weight: normal;
  }
 
  img {
@@ -32,13 +34,35 @@ You will find this is far easier than the opposite task of using CSS to cram you
      padding: 10px;
  }
 
- .container.photo {
-     max-width: 1200px;
-     padding: 0;
+ .note {
+     font-size: 0.9rem;
+     color: gray;
+ }
+
+ .caption {
+     font-size: 0.9rem;
+     color: gray;
+ }
+
+ .background {
+     background-color: #F0F0F0;
+     /* method section is slightly gray and the full width of the page */
+     padding: 22px 0;
+     /* 22px of vertical padding only */
+ }
+
+ .key {
+     max-width: 500px;
  }
 
  h2 {
      font-weight: normal;
+ }
+
+ h3 {
+     margin-left: auto;
+     margin-right: auto;
+     font-weight: 600;
  }
 
  .item {
@@ -127,24 +151,12 @@ You will find this is far easier than the opposite task of using CSS to cram you
      opacity: 0;
  }
 
- .annotate .dot.purple {
-     background-color: rgba(74, 2, 242, 0.65);
+ .annotate .dot.orange {
+     background-color: rgba(205, 101, 40, 0.8);
  }
 
- .annotate .dot.blue {
-     background-color: rgba(11, 18, 230, 0.65);
- }
-
- .annotate .dot.pink {
-     background-color: rgba(240, 12, 182, 0.65);
- }
-
- .annotate .dot.yellow {
-     background-color: rgba(204, 178, 49, 0.65);
- }
-
- .annotate .dot.red {
-     background-color: rgba(219, 33, 33, 0.65);
+ .annotate .dot.green {
+     background-color: rgba(75, 141, 112, 0.8);
  }
 
  #fifteen1:not(.active) {
@@ -153,8 +165,8 @@ You will find this is far easier than the opposite task of using CSS to cram you
  }
 
  #thirty1:not(.active) {
-     top: 18%;
-     left: 36%;
+     top: 17%;
+     left: 35%;
  }
 
  #forty1:not(.active) {
@@ -169,32 +181,32 @@ You will find this is far easier than the opposite task of using CSS to cram you
 
  #ninety1:not(.active) {
      bottom: 28%;
-     right: 0.2%;
+     right: 0.1%;
  }
 
  #fifteen2:not(.active) {
      bottom: 12%;
-     left: 22%;
+     left: 20%;
  }
 
  #thirty2:not(.active) {
-     bottom: 35%;
-     left: 36%;
+     bottom: 33%;
+     left: 35%;
  }
 
  #forty2:not(.active) {
-     top: 40.5%;
-     left: 50.5%;
+     top: 39.5%;
+     left: 49.5%;
  }
 
  #sixty2:not(.active) {
-     bottom: 24%;
-     right: 27%;
+     bottom: 23%;
+     right: 28%;
  }
 
  #ninety2:not(.active) {
      bottom: 14%;
-     right: 0.1%;
+     right: 0%;
  }
 
  .annotate .dot.active {
@@ -245,8 +257,8 @@ You will find this is far easier than the opposite task of using CSS to cram you
 
          /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
          #fifteen1:not(.active) {
-             bottom: 28%;
-             left: 23.5%;
+             bottom: 27%;
+             left: 23%;
          }
 
          #thirty1:not(.active) {
@@ -256,7 +268,7 @@ You will find this is far easier than the opposite task of using CSS to cram you
 
          #forty1:not(.active) {
              top: 45%;
-             left: 53%;
+             left: 52.5%;
          }
 
          #sixty1:not(.active) {
@@ -266,31 +278,31 @@ You will find this is far easier than the opposite task of using CSS to cram you
 
          #ninety1:not(.active) {
              bottom: 32.2%;
-             right: 1%;
+             right: .5%;
          }
 
          #fifteen2:not(.active) {
-             bottom: 18%;
-             left: 24.5%;
+             bottom: 17%;
+             left: 22.5%;
          }
 
          #thirty2:not(.active) {
-             bottom: 39%;
-             left: 39%;
+             bottom: 38%;
+             left: 37.5%;
          }
 
          #forty2:not(.active) {
              top: 43.5%;
-             left: 53.8%;
+             left: 52.3%;
          }
 
          #sixty2:not(.active) {
-             bottom: 28.2%;
-             right: 29.5%;
+             bottom: 27%;
+             right: 30.5%;
          }
 
          #ninety2:not(.active) {
-             bottom: 19.5%;
-             right: 0.5%;
+             bottom: 19%;
+             right: .5%;
          }
      }
